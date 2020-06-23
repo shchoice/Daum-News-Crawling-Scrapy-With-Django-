@@ -1,0 +1,67 @@
+{% include 'base.html' %}
+
+{% block contents %}
+<div class="body__container">
+
+    <!--FEATURE-->
+    <section class="section section--feature">
+        <div class="inner">
+            <div class="summary">
+                <h2 class="summary__title">
+                    Scrape your News Interests
+                </h2>
+                <p class="summary__description">
+                    Search Keyword what you want and analyze on elasticsearch
+                </p>
+            </div>
+            
+            <div class="search-form"><br>
+                <form id="sign-forms" method="POST" action="">
+                    {% csrf_token %}
+                    <ul>
+                        {% for field in form %}
+                        <li>                            
+                            <div>{{ field.label }}</div>
+                            <input type="{{ field.field.widget.input_type }}" name="{{ field.name }}" class="input--text" placeholder="{{field.label}}">
+                        </li>
+                        {% endfor %}
+                        <li>
+                            <button type="submit" class="btn btn--primary">WebScraping Start</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+
+        <div class="tiles">
+            <div class="inner">
+                <ul class="clearfix">
+                    <li>
+                        <img src="/static/img/Django.png" alt="build">
+                        <h3>Django</h3>
+                        <p>Django 웹 프레임워크를 사용하여 서비스를 구축하였습니다.</p>
+                    </li>
+                    <li>
+                        <img src="/static/img/scrapy.png" alt="build">
+                        <h3>Scrapy</h3>
+                        <p>뉴스 스크래이핑 파트는 Scrapy 프레임워크를 사용해 처리속도를 빠르게 하였습니다.</p>
+                    </li>
+                    <li>
+                        <img src="/static/img/selenium.png" alt="build">
+                        <h3>Selenium</h3>
+                        <p>이미지 스크래이핑 파트는 Selenium 라이브러리를 사용했으며 multiprocessing 처리로 처리 속도를 매우 빠르게 하였습니다.</p>
+                    </li>
+                    <li>
+                        <img src="/static/img/elasticsearch.png" alt="build">
+                        <h3>ElasticSearch</h3>
+                        <p>수집된 정보는 ElasticSearch에 저장하며 빠른 분석을 통해 비지니스 인사이트를 얻을 수 있습니다.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+<!-- FOOTER -->
+{% include "footer.html" %}

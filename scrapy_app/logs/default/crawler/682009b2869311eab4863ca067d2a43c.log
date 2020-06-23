@@ -1,0 +1,692 @@
+2020-04-25 10:23:49 [scrapy.utils.log] INFO: Scrapy 2.0.0 started (bot: scrapy_app)
+2020-04-25 10:23:49 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.10.0, Python 3.8.1 (tags/v3.8.1:1b293b6, Dec 18 2019, 23:11:46) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1d  10 Sep 2019), cryptography 2.8, Platform Windows-10-10.0.18362-SP0
+2020-04-25 10:23:49 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2020-04-25 10:23:49 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_app',
+ 'LOG_FILE': 'logs\\default\\crawler\\682009b2869311eab4863ca067d2a43c.log',
+ 'NEWSPIDER_MODULE': 'scrapy_app.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['scrapy_app.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (compatible; Googlebot/2.1; '
+               '+http://www.google.com/bot.html)'}
+2020-04-25 10:23:49 [scrapy.extensions.telnet] INFO: Telnet Password: cd55633d745f8643
+2020-04-25 10:23:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2020-04-25 10:23:49 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-04-25 10:23:49 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-04-25 10:23:49 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2020-04-25 10:23:49 [scrapy.core.engine] INFO: Spider opened
+2020-04-25 10:23:49 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-04-25 10:23:49 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-04-25 10:23:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/robots.txt> (referer: None)
+2020-04-25 10:23:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587?p=1> (referer: None)
+2020-04-25 10:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3936> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3936>
+{'category': 1,
+ 'contents': '블랙셋 두세트 정도만 팔았음 좋겠다 육성템 한두개밖에 없는 ㅉㄸ로서 링크,유니온 키울때 저거만 있어도 엄청 평하던데',
+ 'published_date': '2020-04-24 16:32',
+ 'recommends': '1',
+ 'title': '개10거지 메린이 입장에서 코인샵 볼때마다',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3936',
+ 'views': 362}
+2020-04-25 10:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3934> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3932> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3933> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3927> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3931> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3929> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3935> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3928> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3934>
+{'category': 1,
+ 'contents': '팅패하면 꼭 튀어나오는 새끼들..사냥터 마릿수는 마릿수대로 쳐먹고(최대 5마리, ex 30마리 젠 되는 사냥터에쟤네 '
+             '5마리 있으면 25마리밖에 젠 안됨..) 몬스터 보면 허공에 공격하긴 하는데몬스터한테 딜 1도 안들어감.. 존재 '
+             '이유를 전혀 알 수 없는 개폐급쓰레기새끼들..리멘이 최종사냥터임에도 불구하고 미궁보다 마릿수도 많이 적어서레벨 '
+             '패널티 받는거 아니면 미궁가서 사냥하는 유저들이 태반인데 쟤네들까지 나오면초고레벨 유저들 배려는 커녕 패널티만 '
+             '주고..파멸의 빛 맞고 디ㅜ져도 뭔 바퀴벌레도 아니고 10초만에 다시 살아돌아옴..뒤질때도 개시끄러움..연합군들 '
+             '쓸어담아주던 검멘님..그립읍니다 ㅜㅜ',
+ 'published_date': '2020-04-24 15:46',
+ 'recommends': '0',
+ 'title': '리멘 개노답 삼형제 삭제좀..',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3934',
+ 'views': 200}
+2020-04-25 10:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3917> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3932>
+{'category': 1,
+ 'contents': '전부터 기다렸어요종이봉투 모자 진짜 갖고싶습니다',
+ 'published_date': '2020-04-21 23:55',
+ 'recommends': '0',
+ 'title': '올해 할로윈이벤트때 코인샵에 종이봉투 모자 넣어주세요',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3932',
+ 'views': 825}
+2020-04-25 10:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3933>
+{'category': 1,
+ 'contents': '월드리프나 열어주십쇼',
+ 'published_date': '2020-04-23 15:24',
+ 'recommends': '1',
+ 'title': '다 집어치우고',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3933',
+ 'views': 393}
+2020-04-25 10:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3927>
+{'category': 1,
+ 'contents': '애초에 두손무기를 등으로 메는형식으로 바꾼이유가 캐릭터 옷 가린다는 이유때문이었는데 캐시무기는 왜 적용안됨?? '
+             '캐시무기끼면 옷가리는건 똑같은데',
+ 'published_date': '2020-04-20 10:30',
+ 'recommends': '0',
+ 'title': '캐시무기 두손모션 수정좀',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3927',
+ 'views': 267}
+2020-04-25 10:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3931>
+{'category': 1,
+ 'contents': '',
+ 'published_date': '2020-04-21 22:49',
+ 'recommends': '0',
+ 'title': '무릉에서 물약빨게 해주거나 몬스터들 데미지좀 적게 들어오게 해줘라 죽는다 계속 ...',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3931',
+ 'views': 511}
+2020-04-25 10:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3929>
+{'category': 1,
+ 'contents': '아니 피통늘리는 스킬이랑 방어력올리는 스킬들은 좀 패시브화좀 해주라;; \xa0애매하게 스킬 5개면 펫에 3개넣고 '
+             '2개는 수동으로 써야하는데 방어력올리는 스킬을 쓰기도좀 그렇고 버리기도 그렇도',
+ 'published_date': '2020-04-20 10:39',
+ 'recommends': '0',
+ 'title': '진짜 눈팅하지만말고 좀 해줘라 ㅋㅋㅋ',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3929',
+ 'views': 1372}
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3935>
+{'category': 1,
+ 'contents': '본캐(남캐)키우면서 존버하면 나오겠지?',
+ 'published_date': '2020-04-24 16:31',
+ 'recommends': '0',
+ 'title': '성별변경권 출시',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3935',
+ 'views': 190}
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3928>
+{'category': 1,
+ 'contents': '안드로이드 on/off기능좀 만들어주세요. 안드못생긴거 코디해야하는데 이것도 현질유도임?',
+ 'published_date': '2020-04-20 10:33',
+ 'recommends': '1',
+ 'title': '안드로이드 on/off',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3928',
+ 'views': 799}
+2020-04-25 10:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3930> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3924> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3925> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3926> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3923> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3918> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3887> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3917>
+{'category': 1,
+ 'contents': 'Ssssss',
+ 'published_date': '2020-04-15 16:30',
+ 'recommends': '0',
+ 'title': '저수',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3917',
+ 'views': 306}
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3930>
+{'category': 1,
+ 'contents': '모험가시그너스레지스탕스얘네도 다 링크 중첩되어 있는데데슬 데벤도 같은 직업군인데 링크 하나로 합쳐도 되지 '
+             '않나4레벨이면 보공 15 뎀지 103레벨이면 보공 12 뎀지 72레벨이면 보공 10 뎀지 51레벨이면 보공 7 뎀지 '
+             '3뭐 이런식으로물론 링크 늘려주는 게 젤 좋긴 한데',
+ 'published_date': '2020-04-20 21:58',
+ 'recommends': '1',
+ 'title': '데슬 데벤 링크',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3930',
+ 'views': 547}
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3924>
+{'category': 1,
+ 'contents': '컴이 저사양이다 보니까 그튀같은데 가면 기상효과 때문에 렉이 너무 걸림진짜 이거 만들어주면 렉 좀\xa0덜 걸리고 '
+             '편할텐데 ㄹㅇ 이거 만들어주면 넥슨코리아 방향으로 절까지 ㅆㄱㄴ한 부분인데 혹시 같은 문제를 겪고 있다면 내가 '
+             '메이플 홈페이지에 건의글 올려둔거 있으니까 추천좀 해주라 ㅜ',
+ 'published_date': '2020-04-19 10:52',
+ 'recommends': '0',
+ 'title': '기상효과 on/off 만들어 주면 안돼냐 ㄹㅇ',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3924',
+ 'views': 485}
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3925>
+{'category': 1,
+ 'contents': '눈뽕 개지리는데 좀 줄여줘라',
+ 'published_date': '2020-04-20 10:22',
+ 'recommends': '0',
+ 'title': '카이저 프로미넌스 이펙트효과좀 줄여주세요',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3925',
+ 'views': 134}
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3926>
+{'category': 1,
+ 'contents': '스탠스없는직업 미하일링크 꼬박꼬박 쓰는거 ㄹㅇ 개귀칞은데 편의성으로 패치좀.. 어차피 직업 컨셉도 ㅅ창난지 '
+             '오랜거같은데',
+ 'published_date': '2020-04-20 10:27',
+ 'recommends': '0',
+ 'title': '전직업 스탠스100퍼좀..',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3926',
+ 'views': 849}
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3923>
+{'category': 1,
+ 'contents': '하나요......?',
+ 'published_date': '2020-04-18 17:36',
+ 'recommends': '0',
+ 'title': '17주년 테라버닝',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3923',
+ 'views': 2000}
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3918>
+{'category': 1,
+ 'contents': '장에반을 만드네',
+ 'published_date': '2020-04-16 21:26',
+ 'recommends': '0',
+ 'title': '조디악 롤백해라 ●▅▇█▇▆▅▄▇',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3918',
+ 'views': 417}
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3887>
+{'category': 1,
+ 'contents': '자석펫도없던데 신기 마리당 30만원 해도 산다는사람이 수두룩 한대내며노대박아님?',
+ 'published_date': '2020-03-28 07:21',
+ 'recommends': '0',
+ 'title': '리부트는 왜 에디가없는건가용.?',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3887',
+ 'views': 2229}
+2020-04-25 10:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3871> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3872> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3873> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3875> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3876> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3870> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3877> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3879> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3871>
+{'category': 1,
+ 'contents': '핑아일체 이벤트도 나왔는데 나올때 되지 않았습니까?!',
+ 'published_date': '2020-03-23 12:13',
+ 'recommends': '0',
+ 'title': '말랑핑크빈세트 재출시 부탁드려요~~~~~~',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3871',
+ 'views': 757}
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3872>
+{'category': 1,
+ 'contents': '옛날 인기많았던 월묘파퀘, 커닝파퀘, 루디파퀘, 올비파퀘 포함 여러 파퀘들현재는 피라미드파퀘와 월파 이외엔 '
+             '파티퀘스트 시스템 자체가 활성화가 되지않고있습니다.현재처럼 파티퀘스트 입장 횟수제한은 두는대신, 보상은 대폭 '
+             '상향시키고 재미도 보장할만큼 개편해주신다면 다들 파티퀘스트를 이용할것같습니다또한 고렙유저들을 위한 , 아케인리버 '
+             '지역 배경을 가져와서 여로부터 에스페라나 리멘까지 파티퀘스트가 재미까지 보장한후 추가된다면 파티퀘스트 시스템이 다시 '
+             '활발해질것같습니다.보상은 현재 1회 클리어 시 각종 아이템을 교환할수있는 재료를 주고, 몇개 모았을시 코어젬이나 '
+             '에잠, 황망 놀긍 영환불 이런걸로다가 보상을 추가해놓으시면 컨텐츠가 되살아나지 않을까요?개인적으로 지금상황만 보면 '
+             '컨텐츠 하나 버려지는거같아서 좀 안타깝다는 생각이 듭니다',
+ 'published_date': '2020-03-23 14:35',
+ 'recommends': '0',
+ 'title': '파티퀘스트 시스템 개편해주세요.',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3872',
+ 'views': 253}
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3873>
+{'category': 1,
+ 'contents': '모험가 직업군 랩70때 받는 여제의강화 퀘스트좀 모험가류 퀘스트에서 분류하지말고 다른분류로 정리해서 분류해주세요 '
+             '퀘스트목록창에서요 골드비치퀘스트면 골드비치 퀘스트 목록에만 남는듯이 그렇게 만드는게 어떨까요?',
+ 'published_date': '2020-03-23 16:06',
+ 'recommends': '0',
+ 'title': '모험가 여제의강화퀘스트 다르게 분류해주세요',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3873',
+ 'views': 432}
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3875>
+{'category': 1,
+ 'contents': '허구한날 겜 팅기는데재획하다 팅기면 답없음접속종료후 일정 시간 내에 돌아오면 버프 남아있었으면...',
+ 'published_date': '2020-03-24 02:11',
+ 'recommends': '0',
+ 'title': '겜팅겼을때 버프유지좀',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3875',
+ 'views': 409}
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3876>
+{'category': 1,
+ 'contents': '퍼펙트이노센트 재출시 바랍니다 ㅠ',
+ 'published_date': '2020-03-24 14:49',
+ 'recommends': '0',
+ 'title': '퍼이노 놀긍혼 다시안나오나요?',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3876',
+ 'views': 1252}
+2020-04-25 10:23:51 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3877>
+{'category': 1,
+ 'contents': '성향아이템은 일제한량도 없는데 아이템형태가 아니라 바로바로 사용 됬으면 합니다.몇십개나 되는걸 30짜리도 짜증나는데 '
+             '5짜리 30개씩 받고 이러면 스트레스만 쌓일겁니다.혹은 파풀라투스처럼 필요하지만 필요치 않는 방식으로 하거나\xa0'
+             '자쿰처럼 입구에서 수급 가능했으면 합니다.(여제도 그랬으면 좋겠는데 욕심이겠죠?)아무도 안가는거 훈장 때문에 '
+             '가는건데 3분제한 없애서 빠른 손절 좀 도와줬으면 합니다.주문서나 스타포스 강화 등 불필요한데서 잡아먹는 시간 좀 '
+             '줄여주세요.불필요한 채널이동을 줄여서 서버에 부담을 줄여줍시다. 불필요한 노동도 줄여주시구요.편의성은 아니지만 '
+             '전에도 썼지만\xa0펫스킬에 펫투명화 추가해주세요.\xa0유저들은 룩에 방해되는 펫 숨길 수 있어서 좋구 넥슨은 '
+             '돈벌어서 좋구.같은 맥락에서 안드로이드 투명화 장비도 추가 했으면 하구요.상시까지는 아니더라도 이벤트로 계정내 '
+             '같은서버의 캐릭터간 캐릭명 변경 이벤트 한번 해줬으면 합니다.메이플이 운영된지가 몇년인데 본캐 바뀐사람이 얼마나 '
+             '많겠습니까?옛 본캐닉 바꾸고 15000메포 쓰고 일주일 대기, 새본캐닉 바꾸는데 15000메포 쓰고\xa0시간은 '
+             '시간대로 비용은 비용대로 소모되서 얼마나 불편합니까?2만캐쉬나 2만메포로 한번쯤 판매해줬으면 합니다.아니다 싶은건 '
+             '댓글로 달아주세요.',
+ 'published_date': '2020-03-24 18:51',
+ 'recommends': '0',
+ 'title': '갓원기 만들어줄 편의성 개선',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3877',
+ 'views': 2129}
+2020-04-25 10:23:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3870>
+{'category': 1,
+ 'contents': '사람이 특정 서버로 몰려서 서버부담이 늘어나는건 알겠는데친구랑 같이하려고해도 리프시즌이아니면 특정 서버에 '
+             '캐릭터생성을 못해서게임을 시작할 생각이 들어도 유입의 싹을 알아서 게임에서 자르고있음.그렇다고 사람이 없는 다른 '
+             '서버를 고르면 특별한 지원을 해주는 것도 아님.순전히 사람이 없는 서버에서 생기는 단점을 유저에게 고스란히 '
+             '떠넘김.직업링크스킬과 함께 캐릭터슬롯추가권 및 캐시아이템 지금까지 힘차게 팔아왔는데무작정 생성제한걸지말고 그냥 '
+             '서버캐릭생성권 좀 팔아줬으면함.',
+ 'published_date': '2020-03-23 11:43',
+ 'recommends': '0',
+ 'title': '서버캐릭생성권을 캐시로 팔던지 해주세요',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3870',
+ 'views': 1557}
+2020-04-25 10:23:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3879>
+{'category': 1,
+ 'contents': '30레벨을 찍을수있게 해주거나 하이퍼스킬에 인퍼널브레스나 윙비트를 빼주고 소드스트라이크를 넣어줬으면 하는 바램입니다',
+ 'published_date': '2020-03-24 20:59',
+ 'recommends': '0',
+ 'title': '언제까지 20레벨짜리 사냥주력기를 사용해야하나요(카이저)',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3879',
+ 'views': 1945}
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3880> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3881> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3882> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3886> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3890> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3891> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3892> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3893> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3880>
+{'category': 1,
+ 'contents': '제발요 토드를 못 하겠어요',
+ 'published_date': '2020-03-25 06:40',
+ 'recommends': '1',
+ 'title': '트레져망토 재 출시or 110제 망토 만들어주세요',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3880',
+ 'views': 1249}
+2020-04-25 10:23:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3881>
+{'category': 1,
+ 'contents': '지금 본케에 시엘,무결,안개무결,포숑 헤어가 묶여있는데, 본케 바꾸고 싶은데 헤어 아까워서 못 옮기는 중... '
+             '코디템은 캐쉬 이동 이벤으로 옮길 수 있는데 헤어도 옮길 수 있게 해주세요.',
+ 'published_date': '2020-03-25 12:50',
+ 'recommends': '1',
+ 'title': '월드 내 마네킹 헤어,성형 옮기는 캐쉬템',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3881',
+ 'views': 2089}
+2020-04-25 10:23:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3882>
+{'category': 1,
+ 'contents': ' 2020. 03. 26 노딜부터해서 무적, 몬스터공격금지 정성이 담긴 매크로 답변',
+ 'published_date': '2020-03-26 12:37',
+ 'recommends': '14',
+ 'title': '메이플은 핵을 막을 생각이 없는건지, 제보해도 처리가 안되네요.',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3882',
+ 'views': 2596}
+2020-04-25 10:23:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3886>
+{'category': 1,
+ 'contents': '돈만 쪽쪽 빨아먹지말고 일을해라 진짜 짜증나게하지말고 막으라는 핵 안막고 뭐하냐? 이게 밸런스패치 맞는거지? ㅅ1ㅂ '
+             '무슨 핵은 안막고 돈빨 생각만하고 밸패라 해놓고 너프 4번먹인 패파는 뭐고 아델 솔직히 밸런스 개좋앗는데 '
+             '붕괴시켜버리고 난리낫네 돈만 밝히다 난리난다',
+ 'published_date': '2020-03-28 02:32',
+ 'recommends': '0',
+ 'title': '아델 다시 돌려놔라 ㄹㅇ;',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3886',
+ 'views': 1750}
+2020-04-25 10:23:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3890>
+{'category': 1,
+ 'contents': '메이플은고르곤 재밌을것만같던데',
+ 'published_date': '2020-03-29 14:02',
+ 'recommends': '0',
+ 'title': '사다리타기 없어요',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3890',
+ 'views': 476}
+2020-04-25 10:23:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3891>
+{'category': 1,
+ 'contents': 'ㅈㄱㄴ 가방으로 감당안됨',
+ 'published_date': '2020-03-30 00:55',
+ 'recommends': '0',
+ 'title': '인벤토리에 전문기술탭 따로 분리해줘요',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3891',
+ 'views': 481}
+2020-04-25 10:23:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3892>
+{'category': 1,
+ 'contents': '*일부 불만 내용은 제로만의 문제가 아닐 수 있다는 점을 인지하고 있습니다.*일부 내용을 잘못 알고 있을 수 '
+             '있습니다. 공격이 아닌 부드러운 지적을 부탁드립니다.2013년에 캐릭터를 생성한 1세대 제로는 wp로 추옵작을 '
+             '못하고 등업한 경우가 많다. 그래서 환생의 불꽃작 팁이 대중화된 뒤에도 어떠한 수혜를 받지 못했다. 거울세계를 나간 '
+             '뒤부터는 wp의 수급량이 줄어들기 때문에, 보스를 잡아 짤짤이 wp를 모으거나 룬광산을 미친듯이 돌아야 했다. '
+             '가뜩이나 환생의 불꽃으로도 뜨지 않는 2추옵을, 1세대 제로들은 더 어렵게, 더 오랜 시간을 들여 띄워야 '
+             '했다.그리고 제로는 1추옵을 띄우기 위해서 부캐 코인돌이도 할 수 없으며, 1추옵의 매물을 사지도 못하기 때문에 '
+             '비싼 교가 영환불을 지르거나, 본캐의 코인을 영환불/검환불에 모두 투자해야 한다. 어차피 1추 띄워도 다른 직업에 '
+             '비하면 턱없이 낮은 수치인데 말이다.반면 이후에 새로 제로를 키우는 사람들은 110~150 때 환불박치기로 2추옵을 '
+             "띄우고 시작하며, 이러한 이점 때문에 1세대 제로들까지 싸그리 잡혀서 '값싼 환불로 강화에 이득보는 직업'으로 "
+             '인식된다.제로의 전용 엠블럼은 꽤 늦게 출시되었는데, 타 직업은 전용 스토리 퀘스트를 깨야 주거나, 대다수는 그냥 '
+             '받을 수 있는 반면 제로는 코인 500개를 모아야 한다. 기존 제로는 이미 러브레터, 마스터리북, 그리고 골드라벨 '
+             '레시피 등을 구매하느라 코인이 남아도는 유저가 거의 없었을 것이다. 거울 세계 코인은 스토리 퀘스트 클리어 및 '
+             '던전을 통해 수급할 수 있는데, 기존 제로는 이미 모든 퀘스트를 깼기 때문에 코인을 수급하기 어렵다. (퀘스트 '
+             '수급의 비중이 상당히 많다)결국 위 항목에서 추옵 문제로 룬광산을 돌아야 했던 것처럼, 기존 제로 유저들은 또 '
+             '경험치도 쥐꼬리만큼 주는 룬광산 노가다를 해 코인을 모아야 했다. 제로가 던전을 돌아 1회당 얻을 수 있는 코인은 '
+             "약 3~4개 정도이다.근데 몇년 전 진행된 '제로하라' 이벤트에서 운영진은 신규 제로가 특정 레벨만 달성하면 "
+             '엠블렘을 주기도 했다. 이 때 신규 제로 유저들은 어차피 골드 라벨 세트가 한물 간 것을 알기 때문에 굳이 코인을 '
+             '낭비하지 않고 엠블렘을 살 수 있음에도 꽁짜 엠블렘을 받은 셈이다. 정작 운영진은 기존 제로에게도 그냥 이벤트 '
+             '차원에서 줄 수 있음에도 주지 않았다. 제로의 경우 엠블렘을 여러 개 가질 수 있다는 장점이 있기는 하지만 '
+             '상식적으로 진짜 엠블렘을 여럿 레전띄워놓고 돌려쓰는 사이코 과금러가 얼마나 있냐고...;-저렙 때의 업그레이드가 '
+             '고렙 전승 후 보정되지 않았다. 이후 개편-V매트릭스 출시 당시 최악의 강화 코어, 병신같은 5차 스킬로 말이 '
+             '많았다고 들었다. 이후 다 개선되었다. 근데 개선된 꼬라지가 맥뎀누수 때문에 여전히 말이 많다.-하드보스 파티가 '
+             '늘어나 아케인 물량이 풀릴 시기에도 에센스만 뜨지 않아 물량이 없는 수준이었다. 이후 개편-글로리 패치 당시 전용 '
+             '5차가 병신으로 나왔다. 일부 타직업은 개떡상을 했는데;; 이후 요번 패치 와서야 개편몇 년이 지난 후, 검마팟 '
+             '유저나 해방 유저도 늘어날 것이고, 칠흑을 쓰는 유저가 많아질 것이고, 5차전직 이후의 새로운 스펙업 컨텐츠가 '
+             '추가되고 맥뎀이 확장되면서 스펙 인플레가 생길 것이다. 어쩌면 해방 무기가 PC방 보상으로 풀리거나, 테라버닝보다 '
+             '더 정신나간 버닝 컨텐츠가 나와 아케인 이상 아이템을 막 뿌릴 지도 모른다. 그때쯤 되면 검마 상위 보스도 잔뜩 '
+             '추가되어 있을 것이고..그 때 가서 새로 유입된 제로들은 무기 강화 계획을 다음과 같이 세울 수 있다. 기존 무기는 '
+             '사냥 가능한 수준까지만 강화하고 손대지 않는다. 엠블럼과 방어구, 장신구, 코어 강화, 그리고 새로 추가되는 각종 '
+             '스펙업 수단을 이용하여 해방 스펙까지 끌어올린다. 그리고 해방을 한 뒤에 해방된 10형에 본격적으로 강화를 한다. '
+             '무기를 강화한 뒤에는 과투자한 방어구의 일부를 팔아 무기 강화에 더 보탤 수 있다. 그리고 그 때가 되어도 여전히 '
+             "'와 제로는 해방 무기 잠재 돌리면 보조까지 둘다 돌아가네, 돈 엄청 아끼는구나' 이런 말과 함께 부럽다는 소리를 "
+             '듣고 있을지도 모른다.반면 쓰지도 못하게 된 9형 이하의 무기에 쌍레 22성 달았을 기존 고스펙 제로는?과연 이들 '
+             '중 누가 무기를 해방시켜 새로 무기를 강화시키고 싶을지부터가 의문이다. 아마 제로를 키우는 인터넷 방송인이라면 '
+             '무조건 할 것이다. 강화 자체가 매우 유용한 컨텐츠니까, 강화하며 보여주는 리액션만큼 조회수가 오르고 후원금이 '
+             '들어오니까. 근데 셀럽이 아닌 일반 제로 유저들은 아무도 모르게 그냥 돈만 두배로 쓰는 것인데, 누가 해방 무기를 '
+             '강화하고 싶을 지 의문이다. 차라리 신규 스펙업 수단이나 무기 외 장비에 투자하는 게 더 이득일텐데 말이다.물론 '
+             '후발주자를 비난하는 건 아니다. 이들은 아무 잘못도, 책임도 없다는 것을 잘 안다. 내가 진정으로 미운 대상은 '
+             '후발주자만 유리하고, 선발대 유저들은 바보로 만드는 운영진의 업데이트 방식이다. 추옵? 제로에 한해 110~150제 '
+             '환불을 쓰게 해줄 수도 있었다. 엠블럼? 엠블럼 추가 되었을 때 이벤트로 걍 하나씩 뿌려줬으면 되었다. 근데 전부 '
+             '안했다. 이번 제네시스 사건도 마찬가지이다. 앞으로 제로를 새로 키울 사람들, 앞으로 제로를 스펙업 시킬 저스펙 '
+             '유저들은 이번 패치를 보고 무기 강화 계획을 새로 짤 수도 있다. 근데 애물단지 무기보조의 해방을 앞둔 고스펙 '
+             '유저들은 추가 과금 말고는 더이상 아무것도 할 수 없다.내가 학생일 때 외쳤던 입시 제도 문제가 직장인이 되어서야 '
+             '정책에 반영된다. 난 이미 학생이 아닌데.내가 직장인일 때 외친 임금 문제가 은퇴 후 개선되었다. 난 이미 일할 수 '
+             '있는 몸이 아닌데.내가 뒤지고 나서야 노인 복지가 개선되었단다 이 씨1발 개좆같은 정치이런 일이 실제로 현실에서도 '
+             '있어 각박한 것이고, 세대 갈등이나 공정성 문제가 생기는 것인데, 그걸 피하거나 위로받고 싶어서 하는 게임에서까지도 '
+             "이런 일이 있다는 것은 말이 안된다.롤백이 싫다면 대안책도 있다.어느 쪽이든 '기존 무기가 아무 가치없는 아이템이 "
+             "되지 않게 하는' 패치를 통해 타협할 여지가 있었다. 그런데 개발진은 그마저도 안해줬다. 또 한참 기다린 뒤에 "
+             '들어주는 척, 아무 의미없는 엉뚱한 패치로 타협을 시도할 게 뻔하다.난 고스펙 제로가 아니다. 그럴 돈을 투자할 '
+             '능력도 없고, 짬도 없다. 지금까지 쓴 이 장문의 글이 어쩌면 커뮤니티를 보며 겉핥기식으로 배운 잡지식에 기반한 '
+             '입메인지도 모른다. 하지만 지금의 제네시스 강화 방식은 바뀌었으면 좋겠다. SY때부터 지금까지 철저히 버려지고 '
+             '외면받은 직업인데, 이 정도 목소리마저 무시받는 상황이 너무 속상하다.',
+ 'published_date': '2020-03-30 14:37',
+ 'recommends': '22',
+ 'title': '[장문O/가독성X] 제로는 늘 후발주자만 유리했다',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3892',
+ 'views': 1757}
+2020-04-25 10:23:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3893>
+{'category': 1,
+ 'contents': '아아 이것은 혈압이라는것이다.',
+ 'published_date': '2020-03-30 21:07',
+ 'recommends': '1',
+ 'title': '아이템전직군에 아예해당되지않는스텟은 붙지않았으면',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3893',
+ 'views': 1765}
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3895> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3896> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3898> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3899> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3900> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3901> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3902> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3904> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3895>
+{'category': 1,
+ 'contents': '솔직히 데미지 0이면 누가봐도 렉때문에 처음에 죽고나서 그대로 끝난건데재도전기회때는 최대스코어가 a로 한정된다 식의 '
+             '페널티가 부여된다하더라도 재도전의 기회를 좀 주십시오......빡쳐서 디질거같아요.......',
+ 'published_date': '2020-04-02 20:39',
+ 'recommends': '0',
+ 'title': '우르스 데미지 0으로 e받으면 재도전의 기회를 주세요... ㅠㅠ',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3895',
+ 'views': 1845}
+2020-04-25 10:23:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3914> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:52 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3896>
+{'category': 1,
+ 'contents': '스마일 이펙트 1100원짜리 사니까 칭호 안보임',
+ 'published_date': '2020-04-03 12:24',
+ 'recommends': '0',
+ 'title': '칭호 우클릭 누르면 안보이게 해주세요',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3896',
+ 'views': 568}
+2020-04-25 10:23:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3898>
+{'category': 1,
+ 'contents': '점령형태에서 단순 참여 형식으로 변경.기존과 같이 유니온 레벨에 따라 참여가능한 캐릭수가 동일하며 캐릭터 레벨에 '
+             '따른 등급에 따라 포인트 지급.하이퍼스탯 찍듯이 포인트 사용.굳이 욕먹어가면서 현재의 형태를 고집하는게 이해가 되지 '
+             '않습니다.의견댓글 받습니다.',
+ 'published_date': '2020-04-03 22:03',
+ 'recommends': '0',
+ 'title': '유니온 편의개선',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3898',
+ 'views': 678}
+2020-04-25 10:23:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3899>
+{'category': 1,
+ 'contents': '제가 메린이라서 잡아본적은 없지만 요즘 보스들은 대부분 패턴이 비슷한것 같더라고요.\xa0피통은 그렇다 쳐도 패턴은 '
+             '항상 피하고 극딜, 다시 피하기, 극딜 패턴이 반복해요.근데 요즘 나온 엘챔보면 신선한 패턴들이 많아보입니다.예를 '
+             '들어 가고일만 하더라도 두명의 보스를 번갈아서 때리고 그 그루트(?) 비슷한건 장판에 몬스터를 일단 없애야 '
+             '하기\xa0때문에 보스로 나오면 재미 있다는 생각이 듭니다.\xa0그래서 앞으로 메이플은 그란디스로 스토리를 '
+             '펼칠것같은데, 이후의 보스들은 메이플월드의 보스들과 다른, 신선한 패턴으로 해소 보스를 잡는데도 즐거운을 느꼈으면 '
+             '좋겠습니다.',
+ 'published_date': '2020-04-04 11:01',
+ 'recommends': '0',
+ 'title': '메이플 보스에 바라는 점',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3899',
+ 'views': 664}
+2020-04-25 10:23:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3900>
+{'category': 1,
+ 'contents': 'ㅈㄱㄴ',
+ 'published_date': '2020-04-04 16:40',
+ 'recommends': '5',
+ 'title': '옥션 검색에 모루템 따로 검색되게 해줘',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3900',
+ 'views': 877}
+2020-04-25 10:23:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3901>
+{'category': 1,
+ 'contents': '처음 선택한 성형이랑 헤어 1억에 다시 할수 있게 하면 안되나엔버 머리 하고 싶다고',
+ 'published_date': '2020-04-04 22:46',
+ 'recommends': '0',
+ 'title': '기본헤어 성형',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3901',
+ 'views': 962}
+2020-04-25 10:23:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3902>
+{'category': 1,
+ 'contents': '아니 다다음주면 홍조 뽀송 나오는데 솔직히 본캐 이미 뽀송이고 본캐아니면 해줄이유도 없는데 피부 마네킹 안내주나?? '
+             '기대하고 있었는데 망했네요&nbsp;버릴수밖에...',
+ 'published_date': '2020-04-05 02:35',
+ 'recommends': '0',
+ 'title': '피부마네킹!!!!!',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3902',
+ 'views': 1056}
+2020-04-25 10:23:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3904>
+{'category': 1,
+ 'contents': 'ㅈㄱㄴ 제바루',
+ 'published_date': '2020-04-06 23:55',
+ 'recommends': '0',
+ 'title': '성별 전환쿠폰',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3904',
+ 'views': 1514}
+2020-04-25 10:23:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3907> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3908> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3909> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3912> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3913> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3919> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3920> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3914>
+{'category': 1,
+ 'contents': '경매장 재등록 가격재설정-심볼 레벨업 하지않아도 경험치 누적가능-보스 단일매칭, 보스 클리어 여부 표시-파티상태여도 '
+             '구성원이 혼자일때 개인컨텐츠 입장가능-버프후딜감소, 펫버프 경직 개선나중에 생각나면 또 추가함(추가)전투중 주문서류 '
+             '아이템 사용가능-링크 프리셋-전문직업, 길드창 등 열었을때 렉안걸리게 최적화-만렙의자 음소거-경매장 주문의흔적 '
+             '100개이상 등록가능',
+ 'published_date': '2020-04-14 16:10',
+ 'recommends': '0',
+ 'title': '편의성 패치',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3914',
+ 'views': 1148}
+2020-04-25 10:23:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3907>
+{'category': 1,
+ 'contents': '부탁드립니다 강원기 디렉터님~!',
+ 'published_date': '2020-04-09 00:01',
+ 'recommends': '2',
+ 'title': '한벌옷 상하의 모루가능하게 해주세요~',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3907',
+ 'views': 1205}
+2020-04-25 10:23:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3908>
+{'category': 1,
+ 'contents': '기모노 입고싶어요 그밖에 일본풍 나는 악세서리나 캐시템도 출시기원',
+ 'published_date': '2020-04-10 15:02',
+ 'recommends': '0',
+ 'title': '일본 기모노 캐시옷이나 모루템 출시기원기',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3908',
+ 'views': 1788}
+2020-04-25 10:23:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3909>
+{'category': 1,
+ 'contents': '총 10부위에 50%확율의 황금망치를 발랐는데 정확히 10개 중 10개가 실패했습니다.아마도 확률이 '
+             '0.1-9.9%인데 운영진님들이 착오가 있어서 50%라고 잘못 기입했거나잠수함 패치를 했거나 기만하는 '
+             '행위같습니다.메이플을 사랑하는 운영진 분들이 그런 짓을 했을 것이라고는 생각하지 않으니아마도 확률 데이터가 혼동이 '
+             '와서 버그가 걸린 것 같습니다.수정 바랍니다.',
+ 'published_date': '2020-04-11 04:15',
+ 'recommends': '0',
+ 'title': '수정 부탁드립니다.',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3909',
+ 'views': 233}
+2020-04-25 10:23:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3912>
+{'category': 1,
+ 'contents': '네 이번 패치에서 자석펫 출시 기원...',
+ 'published_date': '2020-04-14 11:17',
+ 'recommends': '0',
+ 'title': '자석펫 출시!!!???',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3912',
+ 'views': 2173}
+2020-04-25 10:23:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3913>
+{'category': 1,
+ 'contents': '코로나 때문에 유저는 줄지 않고계속 유입되는데친구랑 같이하려니 제 서버에 못만드네요생성제한 해지는 현실적으로 불가능 '
+             '할 것 같고월드리프 좀 열어주세요',
+ 'published_date': '2020-04-14 14:05',
+ 'recommends': '1',
+ 'title': '월드리프 좀..',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3913',
+ 'views': 661}
+2020-04-25 10:23:53 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3919>
+{'category': 1,
+ 'contents': '언제 출시할거야~ㅠㅠ',
+ 'published_date': '2020-04-17 01:47',
+ 'recommends': '1',
+ 'title': '17주년에도 성별변경권은 안내주네 ㅠㅠ',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3919',
+ 'views': 1014}
+2020-04-25 10:23:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.inven.co.kr/board/maple/2587/3921> (referer: http://www.inven.co.kr/board/maple/2587?p=1)
+2020-04-25 10:23:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3920>
+{'category': 1,
+ 'contents': '메생 5개월차 ,,,아직은 캐릭별 스킬이나 링크, 유니온 매일 찾아보고 또 까먹어서 또 찾아본다... 유니온, 링크 '
+             '등등 확실한 스펙업들 꾸준히 하려는데 캐릭 한개 키우다가 지쳐서 다른거좀 키우려고 세팅 좀 할때마다 진짜 링크는 왜 '
+             '이렇게 해놨을까 생각해,,하나하나 클릭하는건 장바구니 어빌리티로 족해ㅠ적어도 1번 2번 이렇게 묶을수 있게 만들어서 '
+             '하루 2번만 변경은 그대로 두더라도다만,\xa0보스용, 사냥용 이정도는 나눠서 클릭 한번으로 쓸수 있게 해줘라 ( '
+             '유니온은 그렇게 해주고 왜 이건 안해? 웨????? )나같은 메린이는 맨날 링크 까먹어서 하려고 보면 하나하나 읽고 '
+             '클릭하고 있다..오우 메이플좀 했는걸 하는 유저들이야 눈감고 대충 이위치쯤 있지\xa0하면서 그림만 보고\xa0'
+             '찍더라 ㅠㅠ... 시간 지나면 익숙해지겠지만 이런 편리함이 생겨야 신규\xa0유저들이 더 좋아하지않을까 싶다...',
+ 'published_date': '2020-04-17 09:37',
+ 'recommends': '1',
+ 'title': '[링크] 하나하나 누르는거 개선좀',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3920',
+ 'views': 539}
+2020-04-25 10:23:54 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.inven.co.kr/board/maple/2587/3921>
+{'category': 1,
+ 'contents': '\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0'
+             '<기존 코인들>- 기존 그림자 상인단 코인, 이그드라실의 룬 등으로도"주문의 흔적" 을 구매가능하게 해당 코인샵에 '
+             '주문의 흔적 품목 추가하는 등(소모도가 높은 품목을 추가하여 코인이 쌓이지 않도록)<월드 파티퀘스트>\u200b- '
+             '\u200b유저를 추방하기위해 파티장이 해당 캐릭터를 우클릭 후 추방버튼을 누를 시해당 캐릭터를 제외한 2명의 '
+             '파티원에게 동의 여부를 묻는 창이 뜨고2명의 파티원 모두 동의할 시 추방되게끔 추방기능개선(수틀린다고 방해하거나 '
+             '잠수타는 스레기들이 적지않습니다.. 레드스티지는 그리 유용한\xa0방편이 아닙니다.)<캐릭터 우클릭 '
+             '시>\u200b- 겹쳐있는 캐릭터 우클릭 시 겹쳐있는 캐릭터들의 이름 전부 출력(마음에 드는 코디를 캐릭터 정보로 '
+             '보고싶으나 겹쳐있어 캐릭터정보다 제대로 뜨질않습니다.)\xa0<메이플스토리 M>\u200b- 일일 온라인 에도 모두 '
+             '받기 버튼 추가<장비창 분할>\u200b- 장비창과 캐시장비창으로 분할<창고 배치>\u200b-\xa0원하는 위치에 '
+             '아이템을 배치할수있게끔 개선 (아이템창 처럼)- 창고또한 아이템창과 같이 카테고리 탭을 분할 및 최대 슬릇 '
+             '확장<캐시 보관함>\u200b- 전직업군 통합- 원하는 위치에 아이템을\xa0배치할수있게끔 개선 (아이템창 처럼)- '
+             '아이템창처럼 카테고리 분할 (장비, 소비, 캐시 등)\xa0\xa0<룬>\xa0- 선택의 룬 출시(이름 그대로 '
+             '원하는 효과 택1 가능한 룬)<아이템 관련>\ufeff\u200b- 쉐어 네임택의 용도를 이벤트 반지 및 이벤트 '
+             '보상 아이템에 사용 시계정내 교환가능할수 있게끔해주는 이벤트 아이템 전용 가위로 용도 수정(현재 교환불가로 '
+             '귀속되어버린 의자나 이벤트 장비 등..)- 캐릭터 외형 이노센트 출시 (안드로이드에 사용 시 기존 안드로이드의 '
+             '외형으로.)사용 시 기존 외형으로 초기화초기화할 부위 선택가능하며 헤어만 할지, 성형만할지, 피부만 할지, 다할지 '
+             '등헤어, 성형 또한 기존 성형 중 택1- 외형 추출권 출시메르, 데몬 등 해당 캐릭터만 가능한 피부나 성형, 헤어를 '
+             '추출하여 다른캐릭터에게 옮기거나사거 팔수있게하는 등오랫동안 재출시 하지않은 헤어와 성형들도 거래를 통해 어느정도 '
+             '수요가 충족될수있다.- 장착시\xa0어떠한 경로로든 경험치를 먹지않는 장비아이템 출시(몬컬레벨 맞추기 너무 힘든 '
+             '경우가 종종있습니다.)\ufeff\u200b\u200b<길라잡이>- 길라잡이 북마크 기능 추가<몬스터 컬렉션>- '
+             '현재 의문의 모몽으로만 등록가능한 몬스터들의 등록가능 컨텐츠 / 맵 추가- 사냥터 모든 몬스터가 낮은 확률로 해당 '
+             '몬스터의 모몽 드랍하도록 드랍품목 수정- 옥토퍼스, 지구방위본부 지역 등.. 미등재 지역 및\xa0미등재몹 '
+             '추가<코디>1. 헤어, 성형 관련- 현재 초이스 헤어, 성형 쿠폰의 교체주기는 굉장히 길며, 주기 또한 일정치 '
+             '않다."초이스" 라기엔\xa0선택이 너무 한정적이다. 따라서 "초이스"\xa0라는 이름에 걸맞게초이스 헤어, 성형 '
+             '쿠폰에 포함된 모든 헤어, 성형을 각 마을들의 헤어샵, 성형 샵에중복없이 차별성을 두어 배치하여 각 마을에 존재하는 '
+             '헤어, 성형샵을 보다 유용하게 사용할수있도록\xa0\xa0하고,기존 주기에는 신규 헤어, 성형을 한종씩만 출시하여 '
+             '마을별 헤어, 성형샵에 골고루 추가적인 배치- 위 사항이 안됀다면 헤어, 성형, 피부 추출권 출시(9년째 출시안됀 '
+             '헤어 출시안해줄거면 갖고있는 유저한테라도 구매가능하게..)- 헤어들중 탈색이 존재하는 헤어들은 탈색의 자리를 차지한 '
+             '색상이 없는 경우가 대부분이므로 헤어색상에 하얀색을 추가하고, 기존 탈색이 차지했던 색상들을 추가- 파스텔톤(?)의 '
+             '연한 색상들의\xa0헤어들을 보다 진한 원색헤어로 바꿀수있는 <진 염색 쿠폰> 출시 (마라벨 헤어등도 진한 붉은색 '
+             '등.. 가능하게)- 캐릭터 생성 시 헤어 색상을 선택할수있는 직업군 계열들의 경우 색상에 마우스를 가져다 대면 '
+             '무슨색상인지 텍스트 표시되게 추가(색약, 색맹인 사람의 경우 선택을 종종\xa0실수합니다.)- 로얄 헤어, 성형과 '
+             '초이스 헤어, 성형의\xa0로테이션 다양화.메이플스토리가 이윤을 추구하는 기업의 게임인 이상 인기 헤어들의 주기가 '
+             '짧은건 어쩔수 없으나 트렌디 로얄 헤어, 성형 쿠폰 시절의 헤어들중 아직도 현재의 초이스와 매달 나오는 로얄 헤어, '
+             '성형 쿠폰의 형태가 갖추어졌음에도 단 한번도. 단 한번도 다시 나오지못한 헤어들이 다수. (지뢰용 헤어라도 다양하게 '
+             '재출시해달라.)- 자신의 현재 캐릭터의\xa0렌즈 색상을 알수있게 텍스트/기능 추가(색약, 색맹 배려)2-1. '
+             '신비의모루 관련 (상호호환 가능모루 출시)- 기존 "신비의 모루"와 상호호환이 가능한 신규 모루 출시 (아이템명 '
+             '미정)사용한 아이템을 캐시아이템 처럼 기존 장비위에 덮어씌울수있게끔 바꿔주는 형태로이경우 해당 장비의 옵션은 '
+             '무효화되며, 장착 시\xa0캐시장비칸에 배치된다.(이로써 기존 "신비의 모루" 의 공용 성별아이템 문제와 한벌옷 '
+             '문제를 보완하여 보다 나은 코디플스토리를 즐길수 있으며, 기존 모루와 병행하여 보다 폭넓게 코디를 할수있다.)- '
+             '두손무기류 중 석궁, 두손검, 두손둔기 등.. 스탠딩 모션이 코디를 가리는경우가 많다.같은 두손무기류인 핸드캐논, '
+             '너클, 건 등을 생각하면 꼭 저런 코디를 가리는 모션을 고수해야하나 싶을정도로코디환경이 직업에 의해 열악해지는 '
+             '경우가 발생. 따라서 여러 모션을 추가하여 취향에 맞게 선택 설정 추가 (두손검도 디자인에 따라선 들고있는 모션이 '
+             '이쁜것도 간혹 있다.)- 아이템창에 장비 외에 캐시장비 또는 장비2 를 추가하여 캐시장비만 수납가능하게 '
+             '개선2-2.\xa0신비의모루 관련 (신비의모루 전용 장비 아이템들 출시 및 전용상점 개설)-\xa0신비의모루를 위한 '
+             '전용 장비 아이템들 출시.성별 공용,\xa0레벨제한 0 의 두 조건을 기본으로 한\xa0신비의모루 가 가능한 모든 '
+             '아이템 부위 로 출시.현재 눈장식 등 은 마땅한 모루용 아이템이 없어\xa0아쿠아틱레터 장식을 장착시 교환 불가 '
+             '임에도 사용할수밖에없다.(그 밖에 아이템들은 교환불가이거나 비싸며 시중에 매물이 적거나 일반적인 형태로 '
+             '구할수없다.)- 신비의모루 전용 장비아이템들을 판매할 NPC와 전용 상점 개설3. 캐시 장비아이템- 교환가능횟수 '
+             '삭제.(이벤트 등으로 얻은 코디템도 거래 가능하게끔 해주는 아이템 출시 라던가..)4.\xa0안드로이드- '
+             '안드로이드의 기능을 추가ex) 컬렉터, 경매장, 연금술, 장비.장신구제작, 창고 등.. 쿠폰 형태 등으로 출시하여 '
+             '추가기능으로써 추가할수있게끔 (가급적 영구쿠폰 출시희망)- 상점기능이 없는 안드로이드에도 상점기능을 부여해주는 '
+             '쿠폰등의 형태 아이템 추가 (가급적 영구쿠폰 출시희망)- 이미 장착한 안드로이드의 경우 가위로 잘라 판매할경우어떠한 '
+             '외형의 변화가 있는지 구매하여 확인하기 전까진 알수없기때문에구매 전에 외형 확인 가능한 기능 추가 (마우스를 가져다 '
+             '대면 외형이 보인다던가, 정보창이 뜬다던가.. 데미안로이드 샀더니 토벤헤어야..)- 캐시샵에서도 안드로이드 출력 '
+             '유,무 선택 가능하게 추가-\xa0안드로이드도 캐시샵에서 코디 가능하게 개선5. 데미지 스킨- 크리, 노크리 중 '
+             '무엇을 크리에 놓고 무엇을 노크리로 지정할지\xa0선택가능하게 개선6. 데몬 직업군 날개 외형- 데몬 직업군 날개 '
+             '전직에 맞춰 바뀌지않고 최종전직인 5차전직을 마치면취향에 맞게 선택가능하게 개선 (큰 날개보단 개인적으로\xa0'
+             '중간날개가 좋다..)7. 성별- 성전환 쿠폰 출시8.\xa0외형 계승- 기존에 캐릭터의 외형정보 (헤어, 성형, '
+             '피부, 렌즈) 를 특정 캐릭터에게 전부 계승시키는 아이템 출시 (계승한\xa0캐릭터는 기본 외형설정으로 회귀)9. '
+             '스킬 이펙트 색상 변경-\xa0스킬 이펙트 색상 변경권 출시(스킬 이펙트 색상에 맞춘 코디가 아닌. 코디에 맞춘 '
+             '스킬 이펙트 색상! )<의자>- 특정 의자는 피부색이 고정되어 창백한 피부나 다크스킨인 캐릭터의 손 색상이 '
+             '살구색으로 출력되는 문제 개선- 의자가 여러 캐릭터를 출력하는 의자의경우 캐릭터 출력 로직을 선택사항으로 '
+             '변경(캐릭터 출력 순서 라던가..)- 교환불가 상태의 의자를 계정내 교환가능으로 바꿔주는 아이템 출시(위 '
+             '쉐어네임택의 용도 수정 시 해결되는 사항)<라이딩>\u200b- 라이딩 기능 추가쿠폰 출시 (고공비행, 글라이딩, '
+             '더블점프 부여가능. 단, 1개이상의 기능을 동시에 부여 불가능)- 라이딩 기존 기능 삭제쿠폰 출시 (라이딩에 탑재된 '
+             '고유 기능을 삭제하여 무기능 라이딩으로 만든다.)- 라이딩 또한 데미지 스킨과같이 추출권 출시',
+ 'published_date': '2020-04-17 21:53',
+ 'recommends': '3',
+ 'title': '여러가지 개선안',
+ 'url': 'http://www.inven.co.kr/board/maple/2587/3921',
+ 'views': 336}
+2020-04-25 10:23:54 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-04-25 10:23:54 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 25391,
+ 'downloader/request_count': 52,
+ 'downloader/request_method_count/GET': 52,
+ 'downloader/response_bytes': 2810773,
+ 'downloader/response_count': 52,
+ 'downloader/response_status_count/200': 52,
+ 'elapsed_time_seconds': 4.33111,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 4, 25, 1, 23, 54, 162389),
+ 'item_scraped_count': 50,
+ 'log_count/DEBUG': 102,
+ 'log_count/INFO': 10,
+ 'request_depth_max': 1,
+ 'response_received_count': 52,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 51,
+ 'scheduler/dequeued/memory': 51,
+ 'scheduler/enqueued': 51,
+ 'scheduler/enqueued/memory': 51,
+ 'start_time': datetime.datetime(2020, 4, 25, 1, 23, 49, 831279)}
+2020-04-25 10:23:54 [scrapy.core.engine] INFO: Spider closed (finished)

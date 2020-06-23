@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scrapy</title>
+
+    <meta name="author" content="shawn">
+    <meta name="description" content="my_project for web scraping">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scaleable=no, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="id-edge">
+
+    <!-- http://ogp.me/ -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GitHub">
+    <meta property="og:title" content="Build software better, together">
+    <meta property="og:description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+    <meta property="og:image" content="/static/img/logo__github.png">
+    <meta property="og:url" content="https://github.com">
+
+    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="GitHub">
+    <meta property="twitter:title" content="Build software better, together">
+    <meta property="twitter:description" content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+    <meta property="twitter:image" content="/static/img/logo__github.png">
+    <meta property="twitter:url" content="https://github.com">
+
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <!-- <link rel="icon" href="/static/img/favicon.png">
+    <link rel="apple-touch-icon" href="/static/img/favicon.png"> -->
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" media="(max-width: 1024px)" href="/static/css/main_medium.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="/static/css/main_small.css">
+    <script defer src="/static/js/main.js"></script>
+
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="section">
+        <div class="inner clearfix">
+
+            <div class="menu-group float--left">
+                <div class="logo">
+                    <a href="/scraping/">WebScraping</a>
+                </div>
+                <ul class="main-menu toggle">
+                    <li><a href="/scraping/newsscraping/">News Collect</a></li>
+                    <li><a href="/newsscrapy/collect/">Daum News Crawling</a></li>
+                    <li><a href="/scraping/imgscraping/">Images Collect</a></li>
+                    <li><a href="http://14.32.98.105:5601/app/kibana#/dashboard/7adfa750-4c81-11e8-b3d7-01146121b73d?_g=(refreshInterval:(pause:!f,value:900000),time:(from:now-24h,to:now))&_a=(description:'Analyze%20mock%20flight%20data%20for%20ES-Air,%20Logstash%20Airways,%20Kibana%20Airlines%20and%20JetBeats',filters:!(),fullScreenMode:!f,options:(hidePanelTitles:!f,useMargins:!t),panels:!((embeddableConfig:(),gridData:(h:7,i:'1',w:32,x:0,y:0),id:aeb212e0-4c84-11e8-b3d7-01146121b73d,panelIndex:'1',type:visualization,version:'7.6.2'),(embeddableConfig:(vis:(colors:('Average%20Ticket%20Price':%230A50A1,'Flight%20Count':%2382B5D8),legendOpen:!f)),gridData:(h:12,i:'3',w:23,x:17,y:7),id:c8fc3d30-4c87-11e8-b3d7-01146121b73d,panelIndex:'3',type:visualization,version:'7.6.2'),(embeddableConfig:(),gridData:(h:15,i:'4',w:48,x:0,y:85),id:'571aaf70-4c88-11e8-b3d7-01146121b73d',panelIndex:'4',type:search,version:'7.6.2'),(embeddableConfig:(vis:(colors:(ES-Air:%23447EBC,JetBeats:%2365C5DB,'Kibana%20Airlines':%23BA43A9,'Logstash%20Airways':%23E5AC0E),legendOpen:!f)),gridData:(h:12,i:'5',w:17,x:0,y:7),id:'8f4d0c00-4c86-11e8-b3d7-01146121b73d',panelIndex:'5',type:visualization,version:'7.6.2'),(embeddableConfig:(vis:(colors:('Carrier%20Delay':%235195CE,'Late%20Aircraft%20Delay':%231F78C1,'NAS%20Delay':%2370DBED,'No%20Delay':%23BADFF4,'Security%20Delay':%23052B51,'Weather%20Delay':%236ED0E0))),gridData:(h:14,i:'6',w:24,x:24,y:33),id:f8290060-4c88-11e8-b3d7-01146121b73d,panelIndex:'6',type:visualization,version:'7.6.2'),(embeddableConfig:(),gridData:(h:14,i:'7',w:24,x:24,y:19),id:bcb63b50-4c89-11e8-b3d7-01146121b73d,panelIndex:'7',type:visualization,version:'7.6.2'),(embeddableConfig:(vis:(colors:(Count:%231F78C1),legendOpen:!f)),gridData:(h:12,i:'10',w:24,x:0,y:35),id:'9886b410-4c8b-11e8-b3d7-01146121b73d',panelIndex:'10',type:visualization,version:'7.6.2'),(embeddableConfig:(vis:(colors:(Count:%231F78C1),legendOpen:!f)),gridData:(h:8,i:'13',w:14,x:10,y:19),id:'76e3c090-4c8c-11e8-b3d7-01146121b73d',panelIndex:'13',type:visualization,version:'7.6.2'),(embeddableConfig:(vis:(colors:(Count:%231F78C1),legendOpen:!f)),gridData:(h:8,i:'14',w:14,x:10,y:27),id:'707665a0-4c8c-11e8-b3d7-01146121b73d',panelIndex:'14',type:visualization,version:'7.6.2'),(embeddableConfig:(),gridData:(h:8,i:'21',w:48,x:0,y:62),id:'293b5a30-4c8f-11e8-b3d7-01146121b73d',panelIndex:'21',type:visualization,version:'7.6.2'),(embeddableConfig:(),gridData:(h:7,i:'22',w:16,x:32,y:0),id:'129be430-4c93-11e8-b3d7-01146121b73d',panelIndex:'22',type:visualization,version:'7.6.2'),(embeddableConfig:(hiddenLayers:!(),isLayerTOCOpen:!t,mapCenter:(lat:38.38637,lon:-89.58746,zoom:3.14),openTOCDetails:!()),gridData:(h:15,i:'23',w:48,x:0,y:70),id:'5dd88580-1906-11e9-919b-ffe5949a18d2',panelIndex:'23',type:map,version:'7.6.2'),(embeddableConfig:(vis:(defaultColors:('0%20-%2050':'rgb(247,251,255)','100%20-%20150':'rgb(107,174,214)','150%20-%20200':'rgb(33,113,181)','200%20-%20250':'rgb(8,48,107)','50%20-%20100':'rgb(198,219,239)'),legendOpen:!f)),gridData:(h:8,i:'25',w:10,x:0,y:19),id:f8283bf0-52fd-11e8-a160-89cc2ad9e8e2,panelIndex:'25',type:visualization,version:'7.6.2'),(embeddableConfig:(vis:(defaultColors:('0%20-%2050':'rgb(247,251,255)','100%20-%20150':'rgb(107,174,214)','150%20-%20200':'rgb(33,113,181)','200%20-%20250':'rgb(8,48,107)','50%20-%20100':'rgb(198,219,239)'),legendOpen:!f)),gridData:(h:8,i:'27',w:10,x:0,y:27),id:'08884800-52fe-11e8-a160-89cc2ad9e8e2',panelIndex:'27',type:visualization,version:'7.6.2'),(embeddableConfig:(vis:(defaultColors:('0%20-%2011':'rgb(247,251,255)','11%20-%2022':'rgb(208,225,242)','22%20-%2033':'rgb(148,196,223)','33%20-%2044':'rgb(74,152,201)','44%20-%2055':'rgb(23,100,171)'),legendOpen:!f)),gridData:(h:15,i:'28',w:24,x:0,y:47),id:e6944e50-52fe-11e8-a160-89cc2ad9e8e2,panelIndex:'28',type:visualization,version:'7.6.2'),(embeddableConfig:(),gridData:(h:6,i:'29',w:8,x:40,y:7),id:'01c413e0-5395-11e8-99bf-1ba7b1bdaa61',panelIndex:'29',type:visualization,version:'7.6.2'),(embeddableConfig:(),gridData:(h:6,i:'30',w:8,x:40,y:13),id:'2edf78b0-5395-11e8-99bf-1ba7b1bdaa61',panelIndex:'30',type:visualization,version:'7.6.2'),(embeddableConfig:(),gridData:(h:15,i:'31',w:24,x:24,y:47),id:ed78a660-53a0-11e8-acbd-0be0ad9d822b,panelIndex:'31',type:visualization,version:'7.6.2')),query:(language:kuery,query:''),timeRestore:!t,title:'%5BFlights%5D%20Global%20Flight%20Dashboard',viewMode:view)">Analysis</a></li>
+                </ul>
+            </div>
+            <div class="sign-group float--right toggle">
+                <div class="btn-group">
+                    <a href="/webuser/login/" class="btn sign-in">Sign In</a>
+                    <a href="/webuser/register/" class="btn btn--primary sign-up">Sign Up</a>
+                </div>
+                <!-- <form id="search-form" method="POST" action="">
+                    <input type="text" id="search" class="input--text" placeholder="Analyze News">
+                    <input type="submit" value="Submit">
+                </form>
+                <form id="search-form" method="POST" action="">
+                    <input type="text" id="search" class="input--text" placeholder="Collect Images">
+                    <input type="submit" value="Submit"> -->
+                </form>
+            </div>
+
+            <div id="toggle-btn">Header Menu Toggle Button</div>
+        </div>
+    </header>
+    <script type="text/javascript">
+
+
+
+        $('.logo').css({'cursor':'url(../img/django.png), auto'});
+      
+      
+      
+      </script>
+{% block contents %}
+{% endblock %}
+</body>
+</html>

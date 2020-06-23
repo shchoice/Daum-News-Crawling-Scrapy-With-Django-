@@ -1,0 +1,37 @@
+{% include  'base.html'%}
+
+{% block contents %}
+    <!-- VISUAL-->
+    <section class="section section--visual">
+        <div class="inner">
+            <div class="summary">
+                <div class="summary">
+                    <h2 class="summary__title">
+                        Collect Your favorite news and&nbsp;images
+                    </h2>
+                    <p class="summary__description">
+                        Scraping your news and image on Google and analyze with elastic search
+                    </p>
+                </div>
+            </div>
+
+            <form id="sign-form" method="POST" action="">
+                {% csrf_token %}
+                <ul>
+                    {% for field in form %}
+                    <li>
+                        <input type="{{ field.field.widget.input_type }}" class="input--text" placeholder="{{field.label}}" name="{{field.name}}">
+                    </li>
+                    {% endfor %}
+                    <li>
+                        <button type="submit" class="btn btn--primary">Sign in</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+<!-- FOOTER -->
+{% include "footer.html" %}
