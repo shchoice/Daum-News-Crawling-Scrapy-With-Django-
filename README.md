@@ -46,10 +46,9 @@
 * 다음 뉴스 스크래이핑 시, 수천개의 페이지 수집으로 포털 사이트로부터 Connection 끊김 방지 필요
 
   * Fake-Agent 사용 
-  * Cookie 설정
   * referer 사용
   * download delay 설정
-
+  
 * Scrapy 프레임워크와 Django 프레임워크 간 연동
 
   ![image-20200623233726319](https://user-images.githubusercontent.com/60699771/85418074-50ed8580-b5ab-11ea-8562-8b29ac5e11ce.png)
